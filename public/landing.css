@@ -33,3 +33,30 @@ html{scroll-behavior:smooth;scroll-padding-top:28px}body{background:#141310;colo
 @media(max-width:600px){
   .hero-inner{grid-template-columns:minmax(0,1fr);min-height:0;padding:30px 4px 0}
 }
+
+/* Readable, fluid typography for large desktop displays. */
+@media(min-width:1440px){
+ .header nav a,.footer nav a{font-size:clamp(16px, .85vw, 22px)}
+ .header-note{font-size:clamp(12px,.65vw,17px)}
+ .hero h1{font-size:clamp(65px,4vw,102px)}
+ .hero .lead{font-size:clamp(25px,1.35vw,34px)}
+ .eyebrow,.projects-copy .eyebrow,.contact-banner .eyebrow{font-size:clamp(12px,.7vw,18px)}
+ .button,.button.small,.text-link{font-size:clamp(16px,.9vw,23px)}
+ .values span,.feature-list span{font-size:clamp(11px,.65vw,16px)}
+ .values{gap:clamp(24px,2vw,50px)}
+ .service h2{font-size:clamp(24px,1.3vw,33px)}
+ .service p,.product-copy p,.projects-copy p:not(.eyebrow),.faq p{font-size:clamp(17px,1vw,25px)!important}
+ .service p{max-width:340px}.service{min-height:clamp(245px,15vw,380px)}
+ .offer-copy h2{font-size:clamp(38px,2.2vw,56px)}
+ .offer-copy>p:not(.eyebrow){font-size:clamp(18px,1vw,25px)}
+ .care-list span{font-size:clamp(14px,.8vw,20px)}
+ .product-copy h2{font-size:clamp(32px,1.8vw,46px);white-space:normal}
+ .projects-copy h2,.faq h2{font-size:clamp(32px,1.8vw,46px)}
+ .project h3{font-size:clamp(20px,1.1vw,28px)}
+ .project p,.contact-banner ul,.faq summary{font-size:clamp(16px,.9vw,23px)}
+ .contact-banner{grid-template-columns:1.5fr auto 1fr;gap:28px}
+ .contact-banner>.handwritten{display:none}
+ .contact-banner h2{font-size:clamp(34px,2vw,51px)}
+ .email,.email small,.copyright{font-size:clamp(12px,.7vw,18px)}
+ .footer{flex-wrap:wrap}.footer nav{flex-wrap:wrap}
+}
